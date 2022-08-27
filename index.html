@@ -37,7 +37,43 @@
 
     <!-- CONTENIDO DE TU PAGINA -->
     <div class="container">
-        <h1>Contenido de tu pagina</h1>
+        <div class="row mt-5">
+            <div class="col-sm-12">
+                <form>
+                    <div class="form-group">
+                        <label>Pelicula</label>
+                        <input type="text" class="form-control" id="txtPelicula">
+
+                    </div>
+                    <button onclick="guardar()" class="btn btn-primary btn-block" type="button">Guardar</button>
+                </form>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-sm-12">
+                <h3>Lista de peliculas</h3>
+                <table class="table table-bordered" aria-describedby="peliculas">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Pelicula</th>
+                            <th width="40%">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tblPeliculas">
+                        <!-- <tr class="text-center font-weight-bold">
+                            <td colspan="2">NO HAY REGISTROS</td>
+                        </tr> -->
+                        <!-- <tr>
+                            <td>Pelicula 1</td>
+                            <td class="text-center">
+                                <button class="btn btn-warning">Editar</button>
+                                <button class="btn btn-danger">Eliminar</button>
+                            </td>
+                        </tr> -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
     <!-- CONTENIDO DE TU PAGINA -->
 
@@ -79,4 +115,5 @@
     </footer>
 </body>
 <script src="assets/js/main.js"></script>
+
 </html>
